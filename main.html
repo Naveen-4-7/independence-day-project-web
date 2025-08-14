@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Indian Freedom Struggle | Independence Day Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Indian Freedom Struggle</h1>
+        <p>Interactive journey through India's path to independence (1857-1947)</p>
+    </header>
+
+    <nav>
+        <button onclick="showSection('timeline')">Timeline</button>
+        <button onclick="showSection('map')">Struggle Map</button>
+        <button onclick="showSection('fighters')">Freedom Fighters</button>
+    </nav>
+
+    <main>
+        <!-- Timeline Section -->
+        <section id="timeline" class="active-section">
+            <h2>Interactive Timeline</h2>
+            <div class="timeline-container">
+                <div class="timeline">
+                    <!-- Timeline items will be added by JavaScript -->
+                </div>
+                <div class="timeline-details" id="timeline-details">
+                    <p>Click on any year to see details</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section id="map">
+            <h2>Struggle Hotspots Map</h2>
+            <div class="map-container">
+                <img src="assets/images/india-map.jpg" alt="India Map" usemap="#indiamap">
+                <map name="indiamap">
+                    
+                    <area shape="circle" coords="300,730,25" alt="Tamil Nadu" data-info="tamilnadu">
+                    <area shape="circle" coords="220,740,20" alt="Kerala" data-info="kerala">
+                    <area shape="circle" coords="215,643,30" alt="Karnataka" data-info="karnataka">
+                    <area shape="circle" coords="160,605,8" alt="Goa" data-info="goa">
+                    <area shape="circle" coords="300,580,30" alt="Andhra Pradesh" data-info="andhrapradesh">
+                    <area shape="circle" coords="200,490,35" alt="Maharashtra" data-info="maharashtra">
+                    <area shape="circle" coords="380,430,25" alt="Telangana" data-info="telangana">
+                    <area shape="circle" coords="460,450,30" alt="Odisha" data-info="odisha">
+                    <area shape="circle" coords="280,380,25" alt="Madhya Pradesh" data-info="madhyapradesh">
+                    <area shape="circle" coords="100,380,25" alt="Gujarat" data-info="gujarat">
+                    <area shape="circle" coords="460,380,20" alt="Jharkhand" data-info="jharkhand">
+                    <area shape="circle" coords="540,380,20" alt="West Bengal" data-info="westbengal">
+                    <area shape="circle" coords="150,280,35" alt="Rajasthan" data-info="rajasthan">
+                    <area shape="circle" coords="225,210,18" alt="Haryana" data-info="haryana">
+                    <area shape="circle" coords="250,227,5" alt="New Delhi" data-info="delhi">
+                    <area shape="circle" coords="350,280,30" alt="Uttarpradesh" data-info="uttarpradesh">
+                    <area shape="circle" coords="490,310,25" alt="Bihar" data-info="bihar">
+                    <area shape="circle" coords="555,250,15" alt="Sikkim" data-info="sikkim">
+                    <area shape="circle" coords="700,248,15" alt="Arunachal Pradesh" data-info="arunachalpradesh">
+                    <area shape="circle" coords="300,180,20" alt="Uttarakhand" data-info="uttarakhand">
+                    <area shape="circle" coords="200,160,20" alt="Punjab" data-info="punjab">
+                    <area shape="circle" coords="250,140,20" alt="Himachal Pradesh" data-info="himachalpradesh">
+                    <area shape="circle" coords="250,65,25" alt="Jammu Kashmir" data-info="jammukashmir">                    
+                    
+                    
+                </map>
+                <div class="location-info" id="location-info">
+                    <span class="close-btn" onclick="hideLocationInfo()">×</span>
+                    <h3 id="location-title">Location</h3>
+                    <div id="location-content"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Freedom Fighters Section -->
+        <section id="fighters">
+            <h2>Freedom Fighters Gallery</h2>
+            <div class="search-box">
+                <input type="text" id="fighter-search" placeholder="Search freedom fighters...">
+            </div>
+            <div class="fighters-gallery" id="fighters-gallery">
+                <!-- Fighters will be added by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created for Independence Day Project Competition</p>
+        <button id="anthem-btn" onclick="playAnthem()">Play National Anthem</button>
+        <audio id="anthem" src="assets/audio/national-anthem.mp3"></audio>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

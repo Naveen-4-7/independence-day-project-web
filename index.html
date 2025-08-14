@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Indian Independence Day</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .loading-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #FF9933, #FFFFFF, #138808);
+        }
+        .flag-container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            margin-bottom: 30px;
+        }
+        .flag {
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/images/flag.png');
+            background-size: cover;
+            position: absolute;
+            animation: wave 3s infinite linear;
+            transform-origin: bottom;
+        }
+        .loading-text {
+            font-size: 24px;
+            color: #000080;
+            font-weight: bold;
+            text-align: center;
+        }
+        .progress-bar {
+            width: 300px;
+            height: 10px;
+            background: #ddd;
+            margin-top: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(to right, #FF9933, #138808);
+            animation: load 5s forwards;
+        }
+        @keyframes wave {
+            0%, 100% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+        }
+        @keyframes load {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="flag-container">
+            <div class="flag"></div>
+        </div>
+        <div class="loading-text">Celebrating 79 Years of Independence</div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "main.html";
+        }, 5000);
+    </script>
+</body>
+</html>
