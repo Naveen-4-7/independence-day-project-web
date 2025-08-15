@@ -338,18 +338,7 @@ const locationData = {
         `
     },
 
-    assam: {
-        title: "Assam – Role in the Freedom Struggle",
-        content: `
-            <p><strong>Key Events:</strong></p>
-            <ul>
-                <li>Participation in the Non-Cooperation Movement under leaders like Tarun Ram Phukan and Nabin Chandra Bardoloi (1920–1922).</li>
-                <li>Quit India Movement protests led by Gopinath Bordoloi and others (1942).</li>
-                <li>Active role in opposing British policies affecting tea plantation workers and peasants.</li>
-            </ul>
-            <img src="assets/images/locations/assam.jpg" width="100%">
-        `
-    },
+    
 
     uttarakhand: {
         title: "Uttarakhand – Role in the Freedom Struggle",
@@ -401,9 +390,85 @@ const locationData = {
             </ul>
             <img src="assets/images/locations/jammukashmir.jpg" width="100%">
         `
+    },
+
+    assam: {
+        title: "Assam – Role in the Freedom Struggle",
+        content: `
+            <p><strong>Key Events:</strong></p>
+            <ul>
+                <li>Participation in the Non-Cooperation Movement under leaders like Tarun Ram Phukan and Nabin Chandra Bardoloi (1920–1922).</li>
+                <li>Quit India Movement protests led by Gopinath Bordoloi and others (1942).</li>
+                <li>Active role in opposing British policies affecting tea plantation workers and peasants.</li>
+            </ul>
+            <img src="assets/images/locations/assam.jpg" width="100%">
+        `
+    },
+
+    nagaland: {
+        title: "Nagaland – Role in the Freedom Struggle",
+        content: `
+            <p><strong>Key Events:</strong></p>
+            <ul>
+                <li>During British rule, Nagaland was part of the Naga Hills district under Assam.</li>
+                <li>Limited direct involvement in the mainstream Indian freedom struggle due to its remote location and distinct political movements.</li>
+                <li>Political awakening grew in the 1940s, leading to the formation of the Naga National Council (NNC) in 1946.</li>
+            </ul>
+            <img src="assets/images/locations/nagaland.jpg" width="100%">
+        `
+    },
+
+    meghalaya: {
+        title: "Meghalaya – Role in the Freedom Struggle",
+        content: `
+            <p><strong>Key Events:</strong></p>
+            <ul>
+                <li>Part of Assam during the British period; tribal leaders resisted colonial expansion and exploitation.</li>
+                <li>Tirot Sing’s resistance (1829–1833) against British rule inspired later political movements.</li>
+                <li>Supported India’s independence indirectly through political mobilization in the hill regions.</li>
+            </ul>
+            <img src="assets/images/locations/meghalaya.jpg" width="100%">
+        `
+    },
+
+    manipur: {
+        title: "Manipur – Role in the Freedom Struggle",
+        content: `
+            <p><strong>Key Events:</strong></p>
+            <ul>
+                <li>Occupied by the Japanese and Indian National Army (INA) during World War II (1944).</li>
+                <li>Battle of Imphal (1944) – A decisive campaign involving the INA and Allied forces.</li>
+                <li>Local support for Subhas Chandra Bose’s INA activities in the region.</li>
+            </ul>
+            <img src="assets/images/locations/manipur.jpg" width="100%">
+        `
+    },
+
+    mizoram: {
+        title: "Mizoram – Role in the Freedom Struggle",
+        content: `
+            <p><strong>Key Events:</strong></p>
+            <ul>
+                <li>Part of the Lushai Hills district under Assam during British rule.</li>
+                <li>Indirect involvement in the Indian freedom struggle due to geographical isolation.</li>
+                <li>Formation of political consciousness in the 1940s, eventually contributing to integration with India in 1947.</li>
+            </ul>
+            <img src="assets/images/locations/mizoram.jpg" width="100%">
+        `
+    },
+
+    tripura: {
+        title: "Tripura – Role in the Freedom Struggle",
+        content: `
+            <p><strong>Key Events:</strong></p>
+            <ul>
+                <li>Princely state under British suzerainty during the colonial period.</li>
+                <li>Provided shelter and support to revolutionaries from Bengal, including participants of the Swadeshi Movement.</li>
+                <li>Acceded to the Indian Union in 1949 after independence.</li>
+            </ul>
+            <img src="assets/images/locations/tripura.jpg" width="100%">
+        `
     }
-
-
 
 
 };
@@ -523,7 +588,7 @@ const fightersData = [
         description: "An Indian independence activist, poet, and writer, known for his fierce nationalism, advocacy of Hindutva, and resistance against British colonial rule.",
         image: "assets/images/freedom-fighters/vinayak_damodar_savarkar.jpg",
         quotes: ["One country, one God, one caste, one mind, brothers all of us without difference, without doubt."]
-},
+    },
     {
         name: "Shivaram Rajguru",
         role: "Indian Revolutionary",
@@ -753,9 +818,9 @@ function playAnthem() {
     
     if (anthem.paused) {
         anthem.play();
-        btn.textContent = 'Pause National Anthem';
+        btn.textContent = 'Pause Vande Mataram';
     } else {
         anthem.pause();
-        btn.textContent = 'Play National Anthem';
+        btn.textContent = 'Play Vande Mataram';
     }
 }
